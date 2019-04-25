@@ -49,8 +49,8 @@
 </style>
 
 <li class="todo-item"  class:completed={todo.completed}>
-  <div class="todo-item-group" on:click={() => toggleTodoCompleted(todo.id)}>
-    <p>{todo.title}</p>
+  <div class="todo-item-group">
+    <p on:click={() => toggleTodoCompleted(todo.id)}>{todo.title}</p>
   </div>
   <button class="todo-delete btn" on:click={() => deleteTodo(todo.id)}>
     Delete
