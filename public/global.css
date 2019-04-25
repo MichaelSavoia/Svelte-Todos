@@ -92,39 +92,4 @@ p {
     font-size: 0.8rem;
 }
 
-.btn {
-    box-shadow: 0 4px 6px rgba(50, 50, 50, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transition: all 0.15s ease;
-    background: #5d58ad;
-    color: #fff;
-    border: none;
-}
-
-.btn:hover {
-    box-shadow: 0 7px 12px rgba(50, 50, 50, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
-    background: #7670c7;
-    transform: translateY(-1px);
-}
-
-.btn:active {
-    background: #4a458c;
-    transform: translateY(1px);
-}
-
-.btn-soft {
-    border: 2px solid #5d58ad;
-    background: none;
-    color: #5d58ad;
-}
-
-.btn-soft:hover {
-    border-color: #7670c7;
-    color: #fff;
-}
-
-.btn-soft:active {
-    border-color: #4a458c;
-    color: #fff;
-}
-
 /* TODO: Add danger styles for btn and btn-soft */
