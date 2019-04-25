@@ -54,7 +54,7 @@
   <div class="badge-group">
     <div class="badge total-todos-count">{todos.length} total todos</div>
     {#if todos.length}
-      <div class="badge completed-todos-count">{todos.filter(todo => todo.completed).length} completed todos</div>
+      <div class="badge completed-todos-count">{todos.filter(todo => todo.completed).length} completed</div>
       <div class="badge todos-left-count">{todos.filter(todo => !todo.completed).length} left</div>
     {/if}
   </div>
