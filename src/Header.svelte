@@ -10,7 +10,8 @@
         flex-wrap: wrap;
         padding: 10px 15px;
         border-bottom: 2px solid #5d58ad;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 8px 0 rgba(93, 88, 173, 0.12),
+            0 2px 4px 0 rgba(93, 88, 173, 0.08);
     }
 
     .todos-info .input-wrapper {

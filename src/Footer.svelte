@@ -21,7 +21,8 @@
     }
 
     .add-todo {
-        box-shadow: 0 4px 6px rgba(50, 50, 50, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 6px rgba(93, 88, 173, 0.15),
+            0 1px 3px rgba(93, 88, 173, 0.08);
         transition: all 0.15s ease;
         background: #5d58ad;
         color: #fff;
@@ -29,7 +30,8 @@
     }
 
     .add-todo:hover {
-        box-shadow: 0 7px 12px rgba(50, 50, 50, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 7px 12px rgba(118, 112, 199, 0.15),
+            0 2px 4px rgba(118, 112, 199, 0.08);
         background: #7670c7;
         transform: translateY(-1px);
     }

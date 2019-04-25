@@ -36,13 +36,14 @@
         color: #6b1f33;
         background: none;
         border: none;
-        box-shadow: 0 4px 6px rgba(50, 50, 50, 0), 0 1px 3px rgba(0, 0, 0, 0);
+        box-shadow: 0 4px 6px rgba(107, 31, 51, 0), 0 1px 3px rgba(107, 31, 51, 0);
         transition: all 0.15s ease;
     }
 
     .todo-delete:hover {
         background: #ea6b8d;
-        box-shadow: 0 7px 12px rgba(50, 50, 50, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 7px 12px rgba(234, 107, 141, 0.15),
+            0 2px 4px rgba(234, 107, 141, 0.08);
         transform: translateY(-1px);
     }
 </style>

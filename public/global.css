@@ -16,7 +16,7 @@ body {
 
 body {
     color: #363537;
-    background: #f3f2ff;
+    background: #e8e8f1;
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -63,6 +63,7 @@ input[type='range'] {
 
 button {
     background-color: #f4f4f4;
+    cursor: pointer;
 }
 
 button:active {
