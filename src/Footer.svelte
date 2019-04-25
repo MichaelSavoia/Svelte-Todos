@@ -33,11 +33,6 @@
         background: #7670c7;
         transform: translateY(-1px);
     }
-
-    .add-todo:active {
-        background: #4a458c;
-        transform: translateY(1px);
-    }
 </style>
 
 <div class="add-todo-group">

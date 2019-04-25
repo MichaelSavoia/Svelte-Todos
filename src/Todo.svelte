@@ -1,6 +1,7 @@
 <script>
-  export let props
-  let { todo, toggleTodoCompleted, deleteTodo } = props
+  export let todo
+  export let toggleTodoCompleted
+  export let deleteTodo
 </script>
 
 <style>
@@ -8,7 +9,12 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 8px 0;
+        padding: 12px 15px;
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    .todo-item:last-child {
+        border-bottom: 0;
     }
 
     .todo-item p {
@@ -23,31 +29,29 @@
     .todo-item-group {
         display: flex;
         align-items: center;
-    }
-
-    /* TODO: Create custom checkbox */
-    .todo-toggle {
-        opacity: 0;
+        flex-grow: 1;
     }
 
     .todo-delete {
         color: #6b1f33;
         background: none;
         border: none;
-        box-shadow: none;
+        box-shadow: 0 4px 6px rgba(50, 50, 50, 0), 0 1px 3px rgba(0, 0, 0, 0);
+        transition: all 0.15s ease;
     }
 
     .todo-delete:hover {
         background: #ea6b8d;
+        box-shadow: 0 7px 12px rgba(50, 50, 50, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+        transform: translateY(-1px);
     }
 </style>
 
 <li class="todo-item"  class:completed={todo.completed}>
-  <div class="todo-item-group">
-    <input type="checkbox" class="todo-toggle" on:click={toggleTodoCompleted} bind:checked={todo.completed} value={todo.id} />
+  <div class="todo-item-group" on:click={() => toggleTodoCompleted(todo.id)}>
     <p>{todo.title}</p>
   </div>
-  <button class="todo-delete btn" on:click={deleteTodo} value={todo.id}>
+  <button class="todo-delete btn" on:click={() => deleteTodo(todo.id)}>
     Delete
   </button>
 </li>

@@ -5,18 +5,26 @@
 
 <style>
     .todos-info {
+        z-index: 5;
         display: flex;
+        flex-wrap: wrap;
         padding: 10px 15px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
         border-bottom: 2px solid #5d58ad;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .todos-info .input-wrapper {
+        flex-grow: 1;
     }
 
     .todos-info input {
+        width: 100%;
         margin: 5px 0;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
     }
 
     .badge-group {
-        flex-grow: 1;
+        flex-grow: 2;
         display: flex;
         flex-wrap: wrap;
     }
@@ -50,7 +58,7 @@
       <div class="badge todos-left-count">{todos.filter(todo => !todo.completed).length} left</div>
     {/if}
   </div>
-  <div>
+  <div class="input-wrapper">
     <input type="text" bind:value={filterTerm} placeholder="Filter todos...">
   </div>
 </div>
